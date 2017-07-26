@@ -1,2 +1,20 @@
 package: github.com/dims/k8s-keystone-auth
-import: []
+import:
+- package: github.com/dims/k8s-keystone-auth
+  subpackages:
+  - pkg/authenticator/token/keystone
+- package: github.com/golang/glog
+- package: github.com/gophercloud/gophercloud
+  subpackages:
+  - openstack
+  - openstack/utils
+- package: k8s.io/apimachinery
+  subpackages:
+  - pkg/util/net
+- package: k8s.io/apiserver
+  subpackages:
+  - pkg/authentication/authenticator
+  - pkg/authentication/user
+- package: k8s.io/client-go
+  subpackages:
+  - util/cert
