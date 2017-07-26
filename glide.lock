@@ -1,4 +1,42 @@
 hash: d068aa0c452c69bbf90df62044103df981ecf0f751ed47d750c91e7b6c81060b
-updated: 2017-07-26T08:37:35.407611724-04:00
-imports: []
+updated: 2017-07-26T11:12:54.585701807-04:00
+imports:
+- name: github.com/golang/glog
+  version: 23def4e6c14b4da8ac2ed8007337bc5eb5007998
+- name: github.com/gophercloud/gophercloud
+  version: ed590d9afe113c6107cd60717b196155e6579e78
+  subpackages:
+  - openstack
+  - openstack/identity/v2/tenants
+  - openstack/identity/v2/tokens
+  - openstack/identity/v3/tokens
+  - openstack/utils
+  - pagination
+- name: golang.org/x/net
+  version: f2499483f923065a842d38eb4c7f1927e6fc6e6d
+  subpackages:
+  - context
+  - html
+  - html/atom
+  - http2
+  - http2/hpack
+  - idna
+  - internal/timeseries
+  - lex/httplex
+  - trace
+  - websocket
+- name: k8s.io/apimachinery
+  version: 6134cb2da6d90597b0434e349f90f94fafc9ae51
+  subpackages:
+  - pkg/util/net
+  - pkg/util/sets
+- name: k8s.io/apiserver
+  version: d7bba18199202b51f78c048c2a8404772007f0df
+  subpackages:
+  - pkg/authentication/authenticator
+  - pkg/authentication/user
+- name: k8s.io/client-go
+  version: 450baa5d60f8d6a251c7682cb6f86e939b750b2d
+  subpackages:
+  - util/cert
 testImports: []
