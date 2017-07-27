@@ -24,7 +24,7 @@ depend-update: work
 	cd $(DEST) && glide update
 
 build: work
-	cd $(DEST) && go build -o k8s-keystone-auth main.go
+	cd $(DEST) && mkdir bin && go build -o bin/k8s-keystone-auth main.go
 
 test: unit functional
 
@@ -92,7 +92,7 @@ install-distro-packages:
 	tools/install-distro-packages.sh
 
 clean:
-	rm -rf .bindep k8s-keystone-auth
+	rm -rf $(DEST)/bin $(DEST)/.bindep
 
 realclean: clean
 	rm -rf vendor
