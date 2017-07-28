@@ -24,7 +24,7 @@ depend-update: work
 	cd $(DEST) && glide update
 
 build: work
-	cd $(DEST) && mkdir bin && go build -o bin/k8s-keystone-auth main.go
+	cd $(DEST) && mkdir -p $(DEST)/bin && go build -o $(DEST)/bin/k8s-keystone-auth main.go
 
 test: unit functional
 
